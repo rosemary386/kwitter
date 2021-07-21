@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
+    
+    <style>
+        .Dark Blue{
+            background-color: #04148f;
+        }
+      .Dark Red{
+            background-color:#8f0404;
+        } 
+       .Dark Green{
+            background-color:#154d01;
+        } 
+         
+       .Bright Blue{
+            background-color:#0004ff;
+        } 
+         .Bright Red{
+            background-color:#ff0000;
+        }
+         .Bright Green{
+            background-color:#00d916;
+        }
+        .NIGHT {background-image:url("NIGHT.jpg");  }
+        .DAY {background-image:url("DAY.jpg");  }
+    </style>
+</head>
+<body>
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	<img src="DAY.jpg" class="logo">
+		<h3 >See what is happening in the world right now</h3>
+		<h4 >Join Kwitter today</h4>
+		<div class="form-group">
+		  <label >User Name:</label>
+        <input type="text" id="user_name" class="form_control" placeholder="username">
+		</div>
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">
+            Log in</button>
+		<br><br>
+	</div>
+</center>
+    <h4 set color></h4>
+    <select name="color"id="shades">
+        <option value="#04148f">Dark Blue</option>
+        <option value="#8f0404">Dark Red</option>
+        <option value="#154d01">Dark Green</option>
+        <option value="#0004ff">Bright Blue</option>
+        <option value="#ff0000">Bright Red</option>
+        <option value="#00d916">Bright Green</option>
+       <option value="DAY.jpg"> DAY</option>
+        <option value="NIGHT.jpg">NIGHT</option>
+    </select>
+    <button onclick="colorbg()">Background Color
+    </button>
+</body>
+</html>
